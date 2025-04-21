@@ -1,0 +1,51 @@
+<!-- Tarea 1: crear un formulario de datos personales con los campos; Nombre, Apellido, Email, Fecha de nacimiento, País de residencia, un botón de enviar y 1 o 2 botones más para cambio de estilo, sin recursos, solo HTML y CSS 
+ #2a2a3a-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 1</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body class>
+    <div class="container">
+        <form id="form-data" action="">
+            <div class="inputs">
+                <div class="seccion_inputs">
+                    <input type="text" name ="Nombre" placeholder="Nombre" required>
+                </div>
+                <div class="seccion_inputs">
+                    <input type="text" name ="Apellido" placeholder="Apellido" required>
+                </div>
+                <div class="seccion_inputs">
+                    <input type="email" name ="Email" placeholder="Email" required>
+                </div>
+                <div class="seccion_inputs">
+                    <input type="date" name ="Fecha" placeholder="Fecha" required min="1920-01-01" max="2025-03-25">
+                </div>
+                <div class="seccion_inputs">
+                    <select name="pais" id="pais" required>
+                        <option value disabled selected>Seleccione su Pais</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="container_buttons">
+                <button type="submit" id="btn-submit" class="button_enviar">Enviar</button>
+                <button type="button" id="btn-style1">Estilo 1</button>
+                <button type="button" id="btn-style2">Estilo 2</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="Tarea1.js"></script>
+</body>
+</html>
